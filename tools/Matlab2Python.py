@@ -15,18 +15,9 @@ The Matlab data must be in './mat_gt' directory. The output data will be generat
 
 def matrix2file(cor,path,name):
     lab = sorted(cor,key=lambda x:x[0])
-    f = open(os.path.join(path,name+'.txt'),'w')
-    once = True
-    for i in range(len(lab)):
-        if once:
-            f.write('{} {}\n'.format(lab[i][0],lab[i][1]))
-            once = False
-            continue
-        if lab[i-1][0] > lab[i][0]:
-            continue
-        f.write('{} {}\n'.format(lab[i][0],lab[i][1]))
-    f.close()
-
+    lab = np.asarray(lab)
+    lab[:,0] -= 1   #Change from [1,n] of matlab to [0,n-1] of python
+    np.savetxt(os.path.join(path,name+'.txt'),lab)
 
 def main():
     data_path = 'mat_gt'        #Matlab data folder
