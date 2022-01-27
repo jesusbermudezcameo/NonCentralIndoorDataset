@@ -2,14 +2,10 @@
 Contains the tools for downloading and visualizing the Non-Central Indoor dataset.
 
 ## Introduction
-<p align="left">
-<img src='config/AFimg0241.png' width=100>
-
 <p align="center">
-<img src='config/AFimg0241_d.png' width=100>
-
-<p align="rigth">
-<img src='config/AFimg0241_em.png' width=100>
+<img src='config/AFimg0241.png' width=300>
+<img src='config/AFimg0241_d.png' width=300>
+<img src='config/AFimg0241_em.png' width=300>
 </p>
 
 We present the first dataset of non-central panoramas for scene understanding. Our dataset is composed by 2574 images of different Atlanta and Manhattan virtual environments.
