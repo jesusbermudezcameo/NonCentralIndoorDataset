@@ -12,18 +12,20 @@ The Python-friendly data must be in current directory. The output data will be g
     (i.e. from an  image 'img/image1.png', we will use the 3D corners as '3D_gt/image1.npy';
     the camera pose as 'cam_pose/image1.npy' and so on; to generate 'mat_gt/image1.mat' file)
 '''
-def file2matrix(cor,path,name):
+def file2matrix(path,name):
     lab = np.loadtxt(os.path.join(path,name+'.txt'))
     lab[:,0] += 1   #Change from [0,n-1] of python to [1,n] of matlab
     return lab
 
 def main():
-    data_path = 'mat_gt'        #Matlab data folder
-    cam_path = 'cam_pose'       #Camera pose folder
-    corners_path = '3D_gt'      #3D corners folder
-    angles_path = 'label_ang'   #Spherical coordinates of proyecting rays from wall-ceiling
+    pythonRoot = '../DataPython/'
+    matlabRoot = '../DataMatLab/'
+    data_path = matlabRoot + 'mat_gt'        #Matlab data folder
+    cam_path = pythonRoot + 'cam_pose'       #Camera pose folder
+    corners_path = pythonRoot + '3D_gt'      #3D corners folder
+    angles_path = pythonRoot + 'label_ang'   #Spherical coordinates of proyecting rays from wall-ceiling
                                 # and wall-floor intersections folder
-    labelcor_path = 'label_cor' #Pixel coordinate of 3D corners folder
+    labelcor_path = pythonRoot + 'label_cor' #Pixel coordinate of 3D corners folder
 
     img_path = 'img'
 
@@ -41,7 +43,7 @@ def main():
         mat['T_AbsCam'] = cam_T
 
         #Corner label for training the network
-        label_cor = file2matrix(label_cor,labelcor_path,name)
+        label_cor = file2matrix(labelcor_path,name)
         mat['coordOutputMatrix'] = label_cor
 
         #3D corners of the room

@@ -20,12 +20,14 @@ def matrix2file(cor,path,name):
     np.savetxt(os.path.join(path,name+'.txt'),lab)
 
 def main():
-    data_path = 'mat_gt'        #Matlab data folder
-    cam_path = 'cam_pose'       #Camera pose output folder
-    corners_path = '3D_gt'      #3D corners output folder
-    angles_path = 'label_ang'   #Spherical coordinates of proyecting rays from wall-ceiling
-                                # and wall-floor intersections output folder
-    labelcor_path = 'label_cor' #Pixel coordinate of 3D corners output folder
+    pythonRoot = '../DataPython/'
+    matlabRoot = '../DataMatLab/'
+    data_path = matlabRoot + 'mat_gt'        #Matlab data folder
+    cam_path = pythonRoot + 'cam_pose'       #Camera pose folder
+    corners_path = pythonRoot + '3D_gt'      #3D corners folder
+    angles_path = pythonRoot + 'label_ang'   #Spherical coordinates of proyecting rays from wall-ceiling
+                                # and wall-floor intersections folder
+    labelcor_path = pythonRoot + 'label_cor' #Pixel coordinate of 3D corners folder
 
     data_list = os.listdir(data_path)
     data_list.sort()
