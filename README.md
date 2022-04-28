@@ -19,7 +19,7 @@ The next link will take you to the full dataset. It weights around 2.7GB, includ
 
 ### [Download here](https://drive.google.com/drive/folders/18OQXpbZsr3RBphU0kJC0OS2OXr-3BrkV?usp=sharing) the full dataset
 
-In the dictionary **ScaledLayoutsSplit.pkl**, we provide the splits used in the works [Scaled 360 layouts: revisiting non-central panoramas](https://openaccess.thecvf.com/content/CVPR2021W/OmniCV/papers/Berenguel-Baeta_Scaled_360_Layouts_Revisiting_Non-Central_Panoramas_CVPRW_2021_paper.pdf) and [Atlanta Scaled layouts from Non-central Panoramas](https://www.sciencedirect.com/journal/pattern-recognition)
+In the dictionary **ScaledLayoutsSplit.pkl**, we provide the splits used in the works [Scaled 360 layouts: revisiting non-central panoramas](https://openaccess.thecvf.com/content/CVPR2021W/OmniCV/papers/Berenguel-Baeta_Scaled_360_Layouts_Revisiting_Non-Central_Panoramas_CVPRW_2021_paper.pdf) and [Atlanta Scaled layouts from Non-central Panoramas](https://www.sciencedirect.com/science/article/pii/S0031320322002217)
 
 ## Citing
 For further detail on our dataset, please check [Non-Central Indoor Dataset](https://www.sciencedirect.com/journal/data-in-brief)
