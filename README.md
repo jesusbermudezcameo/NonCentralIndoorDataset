@@ -2,10 +2,11 @@
 
 <p align="center">
 <img src='config/AFimg0241.png' width=450>
+<img src='config/AFimg0241_em.png' width=400>
 </p>
 <p align="center">
 <img src='config/AFimg0241_d.png' width=400>
-<img src='config/AFimg0241_em.png' width=400>
+<img src='config/AFimg0241_depth.png' width=400>
 </p>
 
 ## Introduction
