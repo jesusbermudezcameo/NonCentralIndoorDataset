@@ -18,7 +18,7 @@ We also provide Depth maps for each image as well as the labelling of the struct
 ## Download
 The next link will take you to the full dataset. It weights around 2.7GB, including images, depth maps and Python-friendly layout annotations.
 
-### Download [here](https://drive.google.com/drive/folders/18OQXpbZsr3RBphU0kJC0OS2OXr-3BrkV?usp=sharing) the full dataset from google Drive or [here](https://data.mendeley.com/datasets/jsxkzsknv3/draft?a=8a75efd8-c004-4cb8-8f24-c0078b844b7f) from Mendeley Datasets.
+### Download [here](https://drive.google.com/drive/folders/18OQXpbZsr3RBphU0kJC0OS2OXr-3BrkV?usp=sharing) the full dataset from google Drive or [here](https://data.mendeley.com/datasets/jsxkzsknv3/1) from Mendeley Datasets.
 
 In the dictionary **ScaledLayoutsSplit.pkl**, we provide the splits used in the works [Scaled 360 layouts: revisiting non-central panoramas](https://openaccess.thecvf.com/content/CVPR2021W/OmniCV/papers/Berenguel-Baeta_Scaled_360_Layouts_Revisiting_Non-Central_Panoramas_CVPRW_2021_paper.pdf) and [Atlanta Scaled layouts from Non-central Panoramas](https://www.sciencedirect.com/science/article/pii/S0031320322002217)
 
